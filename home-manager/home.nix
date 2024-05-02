@@ -27,6 +27,7 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = [
+    pkgs.kitty
     # # "Hello, world!" when run.
     # pkgs.hello
 

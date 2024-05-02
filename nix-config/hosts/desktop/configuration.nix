@@ -9,6 +9,7 @@
       ../../common.nix
       ./hardware-configuration.nix
       ./nvidia.nix
+      ./gnome.nix
   ];
 
   networking.hostName = "nixos";
