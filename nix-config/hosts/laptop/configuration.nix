@@ -19,6 +19,10 @@
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
+  environment.systemPackages = with pkgs; [
+    pkgs.acpi
+  ];
+
   # Bluetooth
   hardware.bluetooth.enable = true; # enables support for Bluetooth
   hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
@@ -33,6 +37,9 @@
   services.xserver = {
     layout = "gb";
     xkbVariant = "";
+    displayManager.sessionCommands = ''
+	    xrandr --output eDP-1 --mode 1920x1080 --dpi 120
+    '';
   };
 
   # Enable CUPS to print documents.
