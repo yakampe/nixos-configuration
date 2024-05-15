@@ -1,0 +1,32 @@
+general {
+    colors = true
+    interval = 5
+}
+
+// order += "disk /"
+
+order += "load"
+order += "memory"
+order += "cpu_temperature 0"
+order += "tztime local"
+
+disk "/" {
+    format = "💾 %avail"
+}
+
+load {
+    format = "💪 1min: %1min 🏃 15min: %15min"
+}
+
+cpu_temperature 0 {
+    format = "🌡 %degrees °C"
+}
+
+memory {
+    format = "🧠 %used"
+}
+
+tztime local {
+    format = "⏰ %A, %Y-%m-%d %H:%M:%S"
+}
+
