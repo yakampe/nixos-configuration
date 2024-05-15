@@ -26,8 +26,17 @@
 
   # The home.packages option allows you to install Nix packages into your
   # environment.
+
+
   home.packages = [
     pkgs.kitty
+    pkgs.element-desktop
+    pkgs.ripgrep
+    pkgs.jetbrains.pycharm-community
+    pkgs.lm_sensors
+    pkgs.bruno
+    pkgs.nodejs_21
+    pkgs.chromium
     # # "Hello, world!" when run.
     # pkgs.hello
 

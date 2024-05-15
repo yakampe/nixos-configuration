@@ -9,9 +9,9 @@
       ../../common.nix
       ./hardware-configuration.nix
       ./nvidia.nix
-      ./gnome.nix
+      ./lightdm.nix
   ];
-
+  nix.settings.experimental-features = ["nix-command" "flakes"];
   networking.hostName = "nixos";
 
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -29,10 +29,6 @@
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
-
-  # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
 
   # Configure keymap in X11
   services.xserver = {

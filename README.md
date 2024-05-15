@@ -7,3 +7,7 @@
 4. reboot
 5. run home manager install
 6. reboot
+
+# TODO2
+
+Create script to move i3config
