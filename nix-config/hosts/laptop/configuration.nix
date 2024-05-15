@@ -21,6 +21,7 @@
 
   environment.systemPackages = with pkgs; [
     pkgs.acpi
+    pkgs.pavucontrol
   ];
 
   # Bluetooth
