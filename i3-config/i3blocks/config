@@ -1,0 +1,36 @@
+# Global properties
+interval=5
+separator=true
+separator_block_width=15
+markup=pango
+
+[battery]
+label=🔋
+command=bash -c 'acpi | cut -d, -f 2,3'
+interval=30
+
+[memory]
+label=🧠
+command=free -m | grep Mem | awk '{printf "%.2f GB\n", $3 / 1024}'
+interval=30
+
+
+[cpu_temperature]
+label=🌡️
+command=sensors | awk '/^temp1/ {print $2}'
+interval=10
+
+[disk]
+label=💾
+command=df -h / | awk '/\// {print $4}'
+interval=30
+
+[load]
+label=💪
+command=uptime | sed -n 's/.*load average: \(.*\), \(.*\), \(.*\)/ \1 🏃 \3/p'
+interval=10
+
+[tztime]
+label=⏰
+command=date '+%A, %Y-%m-%d %H:%M:%S'
+interval=60
