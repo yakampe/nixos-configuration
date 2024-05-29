@@ -8,7 +8,7 @@
         windowManager.i3 = {
             enable = true;
             package = pkgs.i3-gaps;
-             extraPackages = with pkgs; [         
+            extraPackages = with pkgs; [         
                 dmenu   
                 i3lock  
                 i3status

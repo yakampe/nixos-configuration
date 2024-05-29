@@ -39,6 +39,7 @@
 
   environment.systemPackages = with pkgs; [
     pkgs.git
+    pkgs.xfce.thunar
   ];
 
   # Enable networking

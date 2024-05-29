@@ -37,6 +37,15 @@
     pkgs.bruno
     pkgs.nodejs_21
     pkgs.chromium
+    pkgs.gimp
+    pkgs.vim
+    pkgs.neovim
+    pkgs.jetbrains.idea-community
+    pkgs.gradle_7
+    pkgs.obs-studio
+    pkgs.vlc
+    pkgs.flameshot
+    pkgs.jq
     # # "Hello, world!" when run.
     # pkgs.hello
 
