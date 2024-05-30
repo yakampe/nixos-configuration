@@ -23,6 +23,8 @@ tiling_drag modifier titlebar
 
 bindsym $mod+Return exec kitty
 
+bindsym $mod+Shift+s exec flameshot gui
+
 bindsym $mod+Shift+q kill
 
 bindsym $mod+d exec --no-startup-id dmenu_run
